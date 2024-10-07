@@ -1,0 +1,85 @@
+
+\documentclass[12pt]{exam}
+\usepackage[spanish]{babel}
+\usepackage{amsmath} % Para notación matemática
+
+\usepackage{amssymb}
+\usepackage{multicol} % Para crear columnas
+\usepackage[left=10mm, right= 20mm, bottom= 20mm, top= 35mm, headsep=10mm, headheight=0mm]{geometry}
+\usepackage{setspace}  
+\usepackage{graphicx}
+\renewcommand\partlabel{\thepartno)}
+%%% DEFINICIONES PARA MODIFICAR APARIENCIA DEL ENCABEZADO%%%
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@fullhead}{\hrule}{\hrule\vskip2pt\hrule height 2pt}{}{}
+\patchcmd{\run@fullhead}{\hrule}{\hrule\vskip2pt\hrule height 2pt}{}{}
+\makeatother
+\pagestyle{headandfoot}
+%\runningheadrule
+\firstpageheadrule
+\firstpageheader {\escuela \\ Curso: \curso}
+                 { \\ \tpnombre}
+                  {\lugar \\         }       
+%\runningheader{\includegraphics[width=0.1\textwidth]{logo.png}}
+%{Matemática:Trabajo Práctico}
+%{\today}
+\firstpagefooter{Prof: \textit{Lucas H.Trejo}}{}{\thepage}
+\runningfooter{Prof: \textit{Lucas H.Trejo}}{}{Pag. \thepage\ of \numpages}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                       %%% REEMPLAZAR LOS PARÁMETROS AQUÍ    %%  
+\newcommand{\escuela}{EES Nº 32}                                             %%             
+\newcommand{\curso}{  5º año}                                                  %%             
+\newcommand{\tpnombre}{ COMISIÓN EVALUADORA PREVIOS \\ Matemática 5º año}                     %%
+\newcommand{\lugar}{La Plata}                                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\textbf{CONSIGNAS DE EVALUACIÓN:}
+
+\begin{questions}
+\question En una sucesión aritmética, $a_1 = 3$ y $r = 5$. Hallar:
+    \begin{parts}
+        \part El término general $a_n$
+        \part Los primeros 10 términos usando el término general.
+        \part La suma de los 25 primeros términos de la sucesión.
+    \end{parts}
+
+\question Calcular el término pedido:
+    \begin{parts}
+        \part $a_9 = 99$, $r = -4$, $a_1 =?$
+        \part Calcular $a_{23}$ sabiendo que $a_6=-2$ y $r =8$
+        \part En una sucesión de los múltiplos de 9 mayores que 20, ¿Cuál es el término que ocupa el lugar 65?
+    \end{parts}
+
+\question En una Sucesión Geométrica, $a_1 = \frac{1}{2}$ y $r = \frac{3}{4}$. Hallar:
+    \begin{parts}
+        \part El término general $a_n$
+        \part Los 7 primeros términos usando el término general
+        \part La suma de los 16 primeros términos de la sucesión.
+    \end{parts}
+
+\question Resolver justificando cada paso.
+    \begin{parts}
+        \part $-4 - 3 \cdot 2^{2x} = -4^2$
+        \part $2^x - 72 + 4^x = 0$
+        \part $\log_{125} x - \log_5 x = -2$
+        \part $\log_2 x + \log_2 (-2x + 9) = 2$
+    \end{parts}
+
+\question Analizar y graficar la siguiente función racional. Indicar: dominio, imagen, asíntotas, raíces y ordenada al origen. 
+    \[f(x) = \frac{3x}{4-2x}\]
+
+\question Analizar y graficar la siguiente función polinómica. Indicar: grado de la función, raíces, OM de las raíces, ordenada al origen, C\textsuperscript{+} y C\textsuperscript{-}.
+    \[f(x) = 4(x-3)^2 (x-5) \left( x-\frac{7}{2} \right)^3 \left( x+\frac{1}{2} \right)^2\]
+
+\question Graficar la elipse de ecuación:  $$ \dfrac{(x+1)^2}{9} + \dfrac{(y-3)^2}{25} = 1$$ 
+    
+    Indicar: centro, vértices y excentricidad.
+
+\end{questions}
+
+\end{document}
